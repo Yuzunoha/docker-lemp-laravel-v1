@@ -4,9 +4,8 @@
 - laravelインストール済みにしよう
 
 ## 起動手順
-1. このリポジトリをcloneして中に入る
+1. このリポジトリをzipダウンロード,解凍して中に入る
     ```
-    git clone https://github.com/Yuzunoha/docker-lemp-laravel-v1.git
     cd docker-lemp-laravel-v1
     ```
 1. phpコンテナ内のuidをhost側のuidに合わせる(Docker for Mac/Windowsの人は不要かもしれない)
