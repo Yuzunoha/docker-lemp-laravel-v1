@@ -25,12 +25,15 @@
     # phpコンテナで
     composer install
     ```
+1. migrationを試す
+    ```
+    # phpコンテナで
+    php artisan migrate
+    ```
+1. ブラウザで http://localhost:10080 にアクセスする
 
 ## メモ
 - htmlディレクトリがnginx/phpコンテナのドキュメントルート`/var/www/html`にマウントされている
-- ドキュメントルートにアクセスする方法
-  - ブラウザで下記アドレスにアクセスする
-      - http://localhost:10080
 - phpMyAdminにアクセスする方法
   - ブラウザで下記アドレスにアクセスする
       - http://localhost:10040
