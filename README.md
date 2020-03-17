@@ -1,8 +1,9 @@
 # docker-lemp-laravel-v1
 
 ## 起動手順
-1. このリポジトリをzipダウンロードして解凍して中に入る
+1. このリポジトリをcloneして中に入る。自分のLaravelプロジェクトとして使いたい場合は`.git/`以外のファイルをコピーして使う
     ```
+    git clone https://github.com/Yuzunoha/docker-lemp-laravel-v1.git
     cd docker-lemp-laravel-v1
     ```
 1. phpコンテナ内のuidをhost側のuidに合わせる(Docker for Mac/Windowsの人は不要かもしれない)
@@ -31,6 +32,9 @@
 1. ブラウザで http://localhost:10080 にアクセスする
 
 ## メモ
-- htmlディレクトリがnginx/phpコンテナのドキュメントルート`/var/www/html`にマウントされている
-- phpMyAdminにアクセスする方法
-  - ブラウザで http://localhost:10040 にアクセスする
+- ホスト側で`html`以下のファイルを編集してLaravelを開発する。artisanやcomposerを使いたいときはphpコンテナに接続する
+- phpMyAdminはブラウザで http://localhost:10040 にアクセスする
+- dockerを終了するコマンド
+    ```
+    docker-compose down
+    ```
