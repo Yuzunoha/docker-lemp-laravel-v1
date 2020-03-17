@@ -34,6 +34,10 @@
 ## メモ
 - ホスト側で`html`以下のファイルを編集してLaravelを開発する。artisanやcomposerを使いたいときはphpコンテナに接続する
 - phpMyAdminはブラウザで http://localhost:10040 にアクセスする
+- dockerコンテナから抜ける方法
+    ```
+    Ctrl+pを押してからCtrl+qを押す
+    ```
 - dockerを終了するコマンド
     ```
     docker-compose down
